@@ -1,5 +1,6 @@
+jwetzell/guacamole:latest
 # lscr.io/linuxserver/chromium:latest
-wdotai/wai:latest-cuda
+# wdotai/wai:latest-cuda
 # avacalho/quilibrium:2.0.0.7
 # pingpongbuild/station:20240628
 # cssshow/nubit_node:latest
