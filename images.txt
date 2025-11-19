@@ -9,4 +9,4 @@ jwetzell/guacamole:latest
 #支持指定架构
 # --platform=linux/amd64 
 # 代码拉取 registry.cn-hangzhou.aliyuncs.com/docker-hub-bak/
-
+ubuntu:24.04
