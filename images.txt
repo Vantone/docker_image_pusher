@@ -1,4 +1,5 @@
-jwetzell/guacamole:latest
+lscr.io/linuxserver/wireguard:latest
+# jwetzell/guacamole:latest
 # lscr.io/linuxserver/chromium:latest
 # wdotai/wai:latest-cuda
 # avacalho/quilibrium:2.0.0.7
@@ -9,4 +10,4 @@ jwetzell/guacamole:latest
 #支持指定架构
 # --platform=linux/amd64 
 # 代码拉取 registry.cn-hangzhou.aliyuncs.com/docker-hub-bak/
-ubuntu:24.04
+# ubuntu:24.04
