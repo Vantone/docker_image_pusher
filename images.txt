@@ -11,4 +11,5 @@
 # --platform=linux/amd64 
 # 代码拉取 registry.cn-hangzhou.aliyuncs.com/docker-hub-bak/
 # ubuntu:24.04
+# allinssl/allinssl:latest
 allinssl/allinssl:latest
