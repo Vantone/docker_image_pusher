@@ -1,4 +1,4 @@
-lscr.io/linuxserver/wireguard:latest
+#lscr.io/linuxserver/wireguard:latest
 # jwetzell/guacamole:latest
 # lscr.io/linuxserver/chromium:latest
 # wdotai/wai:latest-cuda
@@ -11,3 +11,4 @@ lscr.io/linuxserver/wireguard:latest
 # --platform=linux/amd64 
 # 代码拉取 registry.cn-hangzhou.aliyuncs.com/docker-hub-bak/
 # ubuntu:24.04
+allinssl/allinssl:latest
