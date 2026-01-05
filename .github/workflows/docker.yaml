@@ -11,6 +11,7 @@ env:
   ALIYUN_NAME_SPACE: "${{ secrets.ALIYUN_NAME_SPACE }}"
   ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
   ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
+  DOCKER_CONFIG_JSON: "${{secrets.DOCKER_CONFIG_JSON}}"
 
 jobs:
 
@@ -38,7 +39,12 @@ jobs:
         # remove-android: 'true'
         # remove-codeql: 'true'
         build-mount-path: '/var/lib/docker/'
-
+    - name: config
+      run: |
+        mkdir -p ~/.docker
+        echo '${{ secrets.DOCKER_CONFIG_JSON }}' > ~/.docker/config.json
+        chmod 600 ~/.docker/config.json
+        
     - name: Restart docker
       run: sudo service docker restart
 
@@ -57,7 +63,7 @@ jobs:
 
     - name: Build and push image Aliyun
       run: |
-        docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
+        # docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
         # 数据预处理,判断镜像是否重名
         declare -A duplicate_images
         declare -A temp_map
