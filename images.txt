@@ -12,4 +12,4 @@
 # 代码拉取 registry.cn-hangzhou.aliyuncs.com/docker-hub-bak/
 # ubuntu:24.04
 # allinssl/allinssl:latest
-allinssl/allinssl:latest
+ollama/ollama:0.30.9
