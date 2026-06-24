@@ -13,4 +13,5 @@
 # ubuntu:24.04
 # allinssl/allinssl:latest
 # ollama/ollama:0.30.9
-metaligh/3x-ui:latest
+# metaligh/3x-ui:latest
+bigbugcc/3x-ui:v3.4.0
